@@ -1,0 +1,14 @@
+app:
+  name: "to-do-list"
+  version: "1.0.0"
+
+http:
+  port: "8000"
+
+logger:
+  log_level: "debug"
+
+mongo:
+  url: "mongodb://localhost:27017"
+  db: "mongodb"
+
