@@ -8,11 +8,11 @@ import (
 	"syscall"
 
 	"github.com/gin-gonic/gin"
-	"github.com/heloayer/todo-list/config"
-	"github.com/heloayer/todo-list/internal/controller"
-	"github.com/heloayer/todo-list/pkg/httpserver"
-	"github.com/heloayer/todo-list/pkg/logger"
-	"github.com/heloayer/todo-list/pkg/mongo"
+	"github.com/heloayer/to-do-list/config"
+	"github.com/heloayer/to-do-list/internal/controller"
+	"github.com/heloayer/to-do-list/pkg/httpserver"
+	"github.com/heloayer/to-do-list/pkg/logger"
+	"github.com/heloayer/to-do-list/pkg/mongo"
 )
 
 func Run(cfg *config.Config) {

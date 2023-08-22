@@ -6,10 +6,9 @@ import (
 	"time"
 
 	"github.com/gin-gonic/gin"
-	"github.com/go-playground/validator/v10"
+	"github.com/go-playground/validator"
+	"github.com/heloayer/to-do-list/pkg/mongo"
 	"gopkg.in/mgo.v2/bson"
-
-	"github.com/heloayer/todo-list/pkg/mongo"
 )
 
 type Task struct {
@@ -28,7 +27,7 @@ func CreateTask(c *gin.Context) {
 		if _, ok := err.(validator.ValidationErrors); ok {
 			c.JSON(http.StatusBadRequest, gin.H{"error": err.Error()})
 		} else {
-			c.JSON(http.StatusBadRequest, gin.H{"error": "Некорректный запрос"})
+			c.JSON(http.StatusBadRequest, gin.H{"error": "incorrect query"})
 		}
 		return
 	}

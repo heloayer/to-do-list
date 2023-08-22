@@ -4,7 +4,7 @@ import (
 	"context"
 	"fmt"
 
-	"github.com/heloayer/todo-list/config"
+	"github.com/heloayer/to-do-list/config"
 	"go.mongodb.org/mongo-driver/mongo"
 	"go.mongodb.org/mongo-driver/mongo/options"
 )
